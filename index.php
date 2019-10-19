@@ -445,7 +445,7 @@ function getIndex(){
 
 }
 
-
+//console.log("Hello guyssss)
 
 </script>
 
