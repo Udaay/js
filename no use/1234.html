@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Login</title>
+
+  <style>
+  td{
+    padding:15px;
+  }
+  input{
+    
+  }
+  #loginposition{
+
+    position:relative;
+    left:65%;
+  }
+  table{
+
+    margin:0 0 0 0;
+
+  }
+  </style>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</head>
+<body  style= "" class="bg-primary">
+
+
+  <form method="POST" action="./login.php" target="_blank" >
+    <nav class="navbar navbar-expand-sm bg-primary">
+      <div id="loginposition" class="navbar-nav">
+        <div class="nav-item">
+          <label>Username:</label>
+          <input type="text" name="username" id="username" size="13" maxlength="12">
+        </div>
+        <div class="nav-item">
+          <label>Password:</label>
+          <input type="pass" name="password" size="13" id="password" maxlength="12" minlength="8">
+        </div>
+        <button id="login">Login</button>
+      </div>
+    </nav>
+<br>
+<br>
+  </form>
+  <div>
+      <img src="bac.jpg" width="100%" height="300px">
+  </div>
+
+  <form method="POST" class="form-inline" action="./login.php">
+
+    <table align="right">
+
+      <tr>
+        <td>First Name:</td>
+        <td> <input type="text" class="form-control" name="fname" size="13"> </td>
+        <td>Last Name:</td>
+        <td> <input type="text" class="form-control" name="lname" size="13"></td>
+      </tr>
+
+      <tr>
+        <td>Email-Id:</td>
+        <td> <input type="text" class="form-control" name="emailid" size="13"> </td>
+        <td>Password:</td>
+        <td> <input type="password" class="form-control" name="password" size="13"></td>
+      </tr>
+
+      <tr>
+
+        <td>Re-enter Password:</td>
+        <td> <input type="text" class="form-control" name="repass" size="13"> </td>
+        <td>Choose Username:</td>
+        <td> <input type="text" class="form-control" name="chooseusername" size="13"></td>
+      </tr>
+
+      <tr>
+        <td></td>
+        <td></td>
+        <td><button>Sign up</button></td>
+      </tr>
+
+    </table>
+
+
+  </form>
+
+
+
+
+
+  <script>
+  document.getElementById("login").onclick=function(){
+    alert("hello");
+  }
+
+
+  </script>
+
+</body>
+
+</html>

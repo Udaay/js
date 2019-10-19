@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+    <style>
+
+    #pos{
+            margin-left: 30%;
+        }
+    @media screen and (max-width: 600px) {
+
+        #pos
+        {
+            margin-left: 0%;
+        }
+
+        .logpos
+        {
+               width:70%;
+        }
+        }
+
+    </style>
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+    <script>
+    $(function(){
+      $("#header").load("header.html");
+      $("#footer").load("footer.html");
+    });
+    </script>
+</head>
+
+<body>
+
+<div id="header"></div>
+<center>
+<div class="container">
+
+    <div>
+
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4" id="pos">
+                <p class="text-center"><img src="reglogo.png" width="120" /></p>
+
+                <div class="row">
+                    <div class="box-bg-white col-md-12 col-xs-12">
+                        <h3 class="text-center">Log in with Your Bidspace Account</h3>
+                        <div class=""></div>
+
+                        <form method="POST" action="./login.php">
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="" placeholder="Password">
+                            </div>
+                            <div class="checkbox" >
+                                <label>
+                                    <input type="checkbox"> <span>Keep me Logged in</span>
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-success">Submit</button>
+                        </form>
+                        <div class=""></div>
+                        <p class="text-center">Not a member yet? <a href="Registration.html" class="text-secondary">Register</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,228 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Contuct Us</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" href="img/favicon.png" />
+        <!-- Place favicon.ico in the root directory -->
+		<!-- google-font -->
+		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+		<!-- all css here -->
+		<!-- bootstrap v3.3.6 css -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- animate css -->
+        <link rel="stylesheet" href="css/animate.css">
+		<!-- jquery-ui.min css -->
+        <link rel="stylesheet" href="css/jquery-ui.min.css">
+		<!-- nivo-slider css -->
+        <link rel="stylesheet" href="css/nivo-slider.css">
+		<!-- magnific-popup css -->
+        <link rel="stylesheet" href="css/magnific-popup.css">
+		<!-- meanmenu css -->
+        <link rel="stylesheet" href="css/meanmenu.min.css">
+		<!-- owl.carousel css -->
+        <link rel="stylesheet" href="css/owl.carousel.css">
+		<!--linearicons css -->
+        <link rel="stylesheet" href="css/linearicons-icon-font.min.css">
+		<!-- font-awesome css -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+		<!-- style css -->
+		<link rel="stylesheet" href="style.css">
+		<!-- responsive css -->
+        <link rel="stylesheet" href="css/responsive.css" />
+		<!-- modernizr css -->
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+
+	<div style="font-size:30px;font-weight:bold;margin:70px 0px 0px 180px">Contact Us</div>
+		<!-- google-map-area-start -->
+		<div class="google-map-area ptb-80">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="google-map" id="map">
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- google-map-area-end -->
+		<!-- contuct-form-area-start -->
+			<div class="contuct-form-area pb-80">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="contuct-form">
+								<form>
+									<div class="form-group contuct_f">
+										<label for="exampleInputEmail1">Name <span>*</span></label>
+										<input type="text" class="form-control" id="exampleInputEmail1" placeholder="Name">
+									</div>
+									<div class="form-group contuct_f">
+										<label for="exampleInputPassword1">Email <span>*</span></label>
+										<input type="email" class="form-control" id="exampleInputPassword1" placeholder="Email">
+									</div>
+									<div class="form-group contuct_f">
+										<label for="exampleInputPassword1">Phone Number</label>
+										<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Phone Number">
+									</div>
+									<div class="form-group contuct_f">
+										<label for="exampleInputPassword1">What is on your mind? <span>*</span></label>
+										<textarea class="form-control" rows="3"></textarea>
+									</div>
+									<button type="submit" class="btn btn-default contact-btn">Submit</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		<!-- contuct-form-area-end -->
+		<!-- all js here -->
+		<!-- jquery latest version -->
+        <script src="js/vendor/jquery-1.12.0.min.js"></script>
+		<!-- bootstrap js -->
+        <script src="js/bootstrap.min.js"></script>
+		<!-- owl.carousel js -->
+        <script src="js/owl.carousel.min.js"></script>
+		<!-- meanmenu js -->
+        <script src="js/jquery.meanmenu.js"></script>
+		<!-- jquery-ui js -->
+        <script src="js/jquery-ui.min.js"></script>
+		<!-- nivo.slider js -->
+        <script src="js/jquery.nivo.slider.js"></script>
+		<!-- magnific-popup js -->
+        <script src="js/jquery.magnific-popup.min.js"></script>
+		<!-- wow js -->
+        <script src="js/wow.min.js"></script>
+		<!-- scrolly js -->
+        <script src="js/jquery.scrolly.js"></script>
+		<!-- Google Map js -->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDA0gvtDVpKHrPUAWQ6tT8DT12ny_TDSkk "></script>
+		<script>
+            // When the window has finished loading create our google map below
+            google.maps.event.addDomListener(window, 'load', init);
+
+            function init() {
+                // Basic options for a simple Google Map
+                // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+                var mapOptions = {
+                    // How zoomed in you want the map to start at (always required)
+                    zoom: 11,
+
+                    scrollwheel: false,
+
+                    // The latitude and longitude to center the map (always required)
+                    center: new google.maps.LatLng(40.6700, -73.9400), // New York
+
+                    // How you would like to style the map.
+                    // This is where you would paste any style found on Snazzy Maps.
+					styles: [
+    {
+        "featureType": "administrative",
+        "elementType": "labels.text.fill",
+        "stylers": [
+            {
+                "color": "#444444"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape",
+        "elementType": "all",
+        "stylers": [
+            {
+                "color": "#f2f2f2"
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "all",
+        "stylers": [
+            {
+                "saturation": -100
+            },
+            {
+                "lightness": 45
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
+        "elementType": "labels.icon",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "transit",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "all",
+        "stylers": [
+            {
+                "color": "#46bcec"
+            },
+            {
+                "visibility": "on"
+            }
+        ]
+    }
+]
+                };
+
+                // Get the HTML DOM element that will contain your map
+                // We are using a div with id="map" seen below in the <body>
+                var mapElement = document.getElementById('map');
+
+                // Create the Google Map using our element and options defined above
+                var map = new google.maps.Map(mapElement, mapOptions);
+
+                // Let's also add a marker while we're at it
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(40.6700, -73.9400),
+                    map: map,
+                    title: 'Snazzy!'
+                });
+            }
+		</script>>
+		<!-- plugins js -->
+        <script src="js/plugins.js"></script>
+		<!-- main js -->
+        <script src="js/main.js"></script>
+    </body>
+</html>
